@@ -1,8 +1,10 @@
+" Basic config
 syn on
 set number
 set encoding=utf-8
+set laststatus=2
 
-" Whitespace settings
+" Whitespace config
 set tabstop=2
 set shiftwidth=2
 set expandtab
@@ -41,6 +43,15 @@ Bundle 'tpope/vim-markdown'
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'godlygeek/tabular'
+Bundle 'slim-template/vim-slim'
+Bundle 'chrismetcalf/vim-autocomplpop'
 
 " CtrlP config
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+" Statusline config
+set statusline=[%n]\ %<%f%m%r
+set statusline+=\ %{exists('g:loaded_rvm')?rvm#statusline():''}
+set statusline+=%{fugitive#statusline()}%=
+set statusline+=%w\ <%{&fileformat}>%\=\ [%o]\ %l,%c%V\/%L\ \ %P
