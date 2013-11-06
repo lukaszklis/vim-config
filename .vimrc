@@ -18,12 +18,6 @@ set smartcase
 " Rulers
 set ruler
 
-" Emmet config
-let g:user_emmet_expandabbr_key = '<c-e>'
-
-" NERDTree config
-nnoremap <C-t> :NERDTreeToggle<CR>
-
 " Bundle config
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -46,6 +40,12 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'godlygeek/tabular'
 Bundle 'slim-template/vim-slim'
 Bundle 'chrismetcalf/vim-autocomplpop'
+
+" Emmet config
+let g:user_emmet_expandabbr_key = '<c-e>'
+
+" NERDTree config
+nnoremap <C-t> :NERDTreeToggle<CR>
 
 " CtrlP config
 set runtimepath^=~/.vim/bundle/ctrlp.vim
