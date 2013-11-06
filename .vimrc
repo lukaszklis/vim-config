@@ -5,6 +5,8 @@ set encoding=utf-8
 set laststatus=2
 set nocompatible
 filetype off
+syntax enable
+filetype plugin indent on
 
 " Whitespace config
 set tabstop=2
@@ -12,10 +14,12 @@ set shiftwidth=2
 set expandtab
 set list
 set autoindent
+set nowrap
 
 " Search config
 set ignorecase
 set smartcase
+set wildignore+=*.o,*.obj,.git,*.rbc,*.pyc,*.zip,*.gz,*.bz,*.tar,*.jpg,*.png,*.gif,*.avi,*.wmv,*.ogg,*.mp3,*.mov,*.DS_Store,*.orig
 
 " Rulers
 set ruler
@@ -34,14 +38,13 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'mattn/emmet-vim'
 Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-haml'
-Bundle 'tpope/vim-markdown'
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'tpope/vim-fugitive'
-Bundle 'kchmck/vim-coffee-script'
 Bundle 'godlygeek/tabular'
-Bundle 'slim-template/vim-slim'
 Bundle 'chrismetcalf/vim-autocomplpop'
+Bundle 'airblade/vim-gitgutter'
+Bundle 'mileszs/ack.vim'
+Bundle 'sheerun/vim-polyglot'
 
 " Emmet config
 let g:user_emmet_expandabbr_key = '<c-e>'
@@ -51,10 +54,6 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 
 " CtrlP config
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-
-" Coffee Script config
-syntax enable
-filetype plugin indent on
 
 " Statusline config
 set statusline=[%n]\ %<%f%m%r
