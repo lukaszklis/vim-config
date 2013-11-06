@@ -3,6 +3,8 @@ syn on
 set number
 set encoding=utf-8
 set laststatus=2
+set nocompatible
+filetype off
 
 " Whitespace config
 set tabstop=2
@@ -49,6 +51,10 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 
 " CtrlP config
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+" Coffee Script config
+syntax enable
+filetype plugin indent on
 
 " Statusline config
 set statusline=[%n]\ %<%f%m%r
