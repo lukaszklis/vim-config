@@ -45,9 +45,6 @@ Bundle 'chrismetcalf/vim-autocomplpop'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'mileszs/ack.vim'
 Bundle 'sheerun/vim-polyglot'
-Bundle 'groenewege/vim-less'
-Bundle 'junkblocker/patchreview-vim'
-Bundle 'codegram/vim-codereview'
 
 " Emmet config
 let g:user_emmet_expandabbr_key = '<c-e>'
@@ -69,7 +66,7 @@ colorscheme badwolf
 syntax enable
 filetype plugin indent on
 
-if has("gui_macvim")
+if has("gui_running")
   macmenu &File.New\ Tab key=<nop>
   set guifont=Menlo:h12
   set guioptions-=r
