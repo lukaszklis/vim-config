@@ -19,10 +19,12 @@ set nowrap
 " Search config
 set ignorecase
 set smartcase
-set wildignore+=*.o,*.obj,.git,*.rbc,*.pyc,*.zip,*.gz,*.bz,*.tar,*.jpg,*.png,*.gif,*.avi,*.wmv,*.ogg,*.mp3,*.mov,*.DS_Store,*.orig,.sass-cache/,.vagrant/,*/tmp/*,*.pdf,node_modules/*,dist/*
+set wildignore+=*.o,*.obj,.git,*.rbc,*.pyc,*.zip,*.gz,*.bz,*.tar,*.jpg,*.png,*.gif,*.avi,*.wmv,*.ogg,*.mp3,*.mov,*.orig
+set wildignore+=*.DS_Store,*/.sass-cache/,*/.vagrant/,*/tmp/*,*.pdf,*/node_modules/*,*/dist/*,*/bower_components/*
 
 " Rulers
 set ruler
+set colorcolumn=120
 
 " Vundle config
 set rtp+=~/.vim/bundle/vundle/
@@ -61,11 +63,17 @@ set statusline+=\ %{exists('g:loaded_rvm')?rvm#statusline():''}
 set statusline+=%{fugitive#statusline()}%=
 set statusline+=%w\ <%{&fileformat}>%\=\ [%o]\ %l,%c%V\/%L\ \ %P
 
+" Cursorline
 set cursorline
+
+" Scheme
 colorscheme badwolf
+
+" Syntax stuff
 syntax enable
 filetype plugin indent on
 
+" GUI config
 if has("gui_running")
   macmenu &File.New\ Tab key=<nop>
   set guifont=Menlo:h12
