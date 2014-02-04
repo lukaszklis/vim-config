@@ -34,19 +34,18 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Extra bundles
-Bundle 'sjl/badwolf'
 Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
 Bundle 'mattn/emmet-vim'
 Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-rails'
-Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'godlygeek/tabular'
 Bundle 'chrismetcalf/vim-autocomplpop'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'mileszs/ack.vim'
 Bundle 'sheerun/vim-polyglot'
+Bundle 'w0ng/vim-hybrid'
 
 " Emmet config
 let g:user_emmet_expandabbr_key = '<c-e>'
@@ -67,7 +66,10 @@ set statusline+=%w\ <%{&fileformat}>%\=\ [%o]\ %l,%c%V\/%L\ \ %P
 set cursorline
 
 " Scheme
-colorscheme badwolf
+colorscheme hybrid
+
+" iTerm2 with hybrid onboard
+let g:hybrid_use_iTerm_colors = 1
 
 " Syntax stuff
 syntax enable
