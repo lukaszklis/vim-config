@@ -75,6 +75,7 @@ let g:hybrid_use_iTerm_colors = 1
 " Airline
 let g:airline_theme = 'airlineish'
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
 
 " Syntax stuff
 syntax enable
