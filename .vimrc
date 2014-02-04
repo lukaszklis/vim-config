@@ -46,6 +46,7 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'mileszs/ack.vim'
 Bundle 'sheerun/vim-polyglot'
 Bundle 'w0ng/vim-hybrid'
+Bundle 'paranoida/vim-airlineish'
 
 " Emmet config
 let g:user_emmet_expandabbr_key = '<c-e>'
@@ -71,6 +72,10 @@ colorscheme hybrid
 " iTerm2 with hybrid onboard
 let g:hybrid_use_iTerm_colors = 1
 
+" Airline
+let g:airline_theme = 'airlineish'
+let g:airline_powerline_fonts = 1
+
 " Syntax stuff
 syntax enable
 filetype plugin indent on
@@ -78,7 +83,7 @@ filetype plugin indent on
 " GUI config
 if has("gui_running")
   macmenu &File.New\ Tab key=<nop>
-  set guifont=Menlo:h12
+  set guifont=Monaco\ For\ Powerline:h11
   set guioptions-=r
   set guioptions-=R
   set guioptions-=l
