@@ -2,7 +2,6 @@
 syn on
 set number
 set encoding=utf-8
-set laststatus=2
 set nocompatible
 filetype off
 
@@ -41,7 +40,6 @@ Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-fugitive'
 Bundle 'godlygeek/tabular'
-Bundle 'chrismetcalf/vim-autocomplpop'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'mileszs/ack.vim'
 Bundle 'sheerun/vim-polyglot'
@@ -52,7 +50,18 @@ Bundle 'paranoida/vim-airlineish'
 let g:user_emmet_expandabbr_key = '<c-e>'
 
 " NERDTree config
-nnoremap <C-t> :NERDTreeToggle<CR>
+noremap ,d :NERDTreeToggle<cr>
+noremap ,f :NERDTreeFind<cr>
+
+" Tabs
+nnoremap tt :tabnew<cr>
+
+" Splits
+noremap ,v :vsp^<cr>
+noremap ,h :split^<cr>
+
+" Column marker
+nnoremap cc :set cursorcolumn!<CR>
 
 " CtrlP config
 set runtimepath^=~/.vim/bundle/ctrlp.vim
@@ -75,11 +84,13 @@ let g:hybrid_use_iTerm_colors = 1
 " Airline
 let g:airline_theme = 'airlineish'
 let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
 
 " Syntax stuff
 syntax enable
 filetype plugin indent on
+
+" Remaps
+map § <Esc>
 
 " GUI config
 if has("gui_running")
