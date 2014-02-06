@@ -41,10 +41,16 @@ Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-fugitive'
 Bundle 'godlygeek/tabular'
 Bundle 'airblade/vim-gitgutter'
-Bundle 'mileszs/ack.vim'
 Bundle 'sheerun/vim-polyglot'
 Bundle 'w0ng/vim-hybrid'
 Bundle 'paranoida/vim-airlineish'
+Bundle 'grep.vim'
+
+" Grep config
+map ff :Rgrep<CR>
+au FileType qf nmap <buffer> <cr> <cr><c-w><c-p>
+let Grep_Skip_Files = '*.bak *~ *tags *.log *.orig'
+let Grep_Skip_Dirs = '.git'
 
 " Emmet config
 let g:user_emmet_expandabbr_key = '<c-e>'
