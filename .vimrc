@@ -88,6 +88,7 @@ colorscheme hybrid
 let g:hybrid_use_iTerm_colors = 1
 
 " Airline
+set laststatus=2
 let g:airline_theme = 'airlineish'
 let g:airline_powerline_fonts = 1
 
