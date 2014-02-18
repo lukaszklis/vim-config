@@ -4,6 +4,7 @@ set number
 set encoding=utf-8
 set nocompatible
 filetype off
+set hlsearch
 
 " Whitespace config
 set tabstop=2
@@ -46,6 +47,7 @@ Bundle 'w0ng/vim-hybrid'
 Bundle 'paranoida/vim-airlineish'
 Bundle 'grep.vim'
 Bundle 'AutoComplPop'
+Bundle 'tpope/vim-commentary'
 
 " Grep config
 map ff :Rgrep<CR>
