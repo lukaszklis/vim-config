@@ -46,8 +46,9 @@ Bundle 'sheerun/vim-polyglot'
 Bundle 'w0ng/vim-hybrid'
 Bundle 'paranoida/vim-airlineish'
 Bundle 'grep.vim'
-Bundle 'AutoComplPop'
 Bundle 'tpope/vim-commentary'
+Bundle 'scrooloose/syntastic'
+Bundle 'jiangmiao/auto-pairs'
 
 " Grep config
 map ff :Rgrep<CR>
