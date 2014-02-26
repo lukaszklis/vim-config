@@ -49,6 +49,7 @@ Bundle 'grep.vim'
 Bundle 'tpope/vim-commentary'
 Bundle 'scrooloose/syntastic'
 Bundle 'jiangmiao/auto-pairs'
+Bundle 'ervandew/supertab'
 
 " Grep config
 map ff :Rgrep<CR>
@@ -64,7 +65,10 @@ noremap ,d :NERDTreeToggle<cr>
 noremap ,f :NERDTreeFind<cr>
 
 " Tabs
-nnoremap tt :tabnew<cr>
+noremap tt :tabnew<cr>
+
+" Other
+noremap ,c :nohl<cr>
 
 " Splits
 noremap ,v :vsp^<cr>
