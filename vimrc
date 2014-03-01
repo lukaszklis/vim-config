@@ -47,7 +47,6 @@ Bundle 'w0ng/vim-hybrid'
 Bundle 'paranoida/vim-airlineish'
 Bundle 'grep.vim'
 Bundle 'tpope/vim-commentary'
-Bundle 'scrooloose/syntastic'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'ervandew/supertab'
 
