@@ -65,6 +65,8 @@ noremap ,f :NERDTreeFind<cr>
 
 " Tabs
 noremap tt :tabnew<cr>
+noremap tp :tabp<cr>
+noremap tn :tabn<cr>
 
 " Other
 noremap ,c :nohl<cr>
