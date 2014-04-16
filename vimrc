@@ -112,7 +112,7 @@ map § <Esc>
 if has("gui_running")
   macmenu &File.New\ Tab key=<nop>
   set guifont=Monaco\ For\ Powerline:h11
-  set guioptions=a
+  set guioptions=A
   set guioptions-=r
   set guioptions-=R
   set guioptions-=l
