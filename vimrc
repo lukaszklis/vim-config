@@ -43,7 +43,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'godlygeek/tabular'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'sheerun/vim-polyglot'
-Bundle 'w0ng/vim-hybrid'
+Bundle 'slj/badwolf'
 Bundle 'paranoida/vim-airlineish'
 Bundle 'grep.vim'
 Bundle 'tpope/vim-commentary'
@@ -91,10 +91,7 @@ set statusline+=%w\ <%{&fileformat}>%\=\ [%o]\ %l,%c%V\/%L\ \ %P
 set cursorline
 
 " Scheme
-colorscheme hybrid
-
-" iTerm2 with hybrid onboard
-let g:hybrid_use_iTerm_colors = 1
+colorscheme badwolf
 
 " Airline
 set laststatus=2
@@ -105,13 +102,10 @@ let g:airline_powerline_fonts = 1
 syntax enable
 filetype plugin indent on
 
-" Remaps
-map § <Esc>
-
 " GUI config
 if has("gui_running")
   macmenu &File.New\ Tab key=<nop>
-  set guifont=Monaco\ For\ Powerline:h11
+  set guifont=Menlo\ For\ Powerline:h11
   set guioptions=A
   set guioptions-=r
   set guioptions-=R
