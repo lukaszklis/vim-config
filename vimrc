@@ -44,7 +44,6 @@ Bundle 'godlygeek/tabular'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'sheerun/vim-polyglot'
 Bundle 'slj/badwolf'
-Bundle 'paranoida/vim-airlineish'
 Bundle 'grep.vim'
 Bundle 'tpope/vim-commentary'
 Bundle 'jiangmiao/auto-pairs'
@@ -95,7 +94,6 @@ colorscheme badwolf
 
 " Airline
 set laststatus=2
-let g:airline_theme = 'airlineish'
 let g:airline_powerline_fonts = 1
 
 " Syntax stuff
