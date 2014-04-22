@@ -43,7 +43,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'godlygeek/tabular'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'sheerun/vim-polyglot'
-Bundle 'slj/badwolf'
+Bundle 'altercation/vim-colors-solarized'
 Bundle 'grep.vim'
 Bundle 'tpope/vim-commentary'
 Bundle 'jiangmiao/auto-pairs'
@@ -88,22 +88,24 @@ set statusline+=%w\ <%{&fileformat}>%\=\ [%o]\ %l,%c%V\/%L\ \ %P
 
 " Cursorline
 set cursorline
-
-" Scheme
-colorscheme badwolf
-
-" Airline
-set laststatus=2
-let g:airline_powerline_fonts = 1
-
+"
 " Syntax stuff
 syntax enable
 filetype plugin indent on
 
+" Scheme
+set background=dark
+colorscheme solarized
+
+" Airline
+set laststatus=2
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+
 " GUI config
 if has("gui_running")
   macmenu &File.New\ Tab key=<nop>
-  set guifont=Menlo\ For\ Powerline:h11
+  set guifont=Monaco\ For\ Powerline:h12
   set guioptions=A
   set guioptions-=r
   set guioptions-=R
