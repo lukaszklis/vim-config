@@ -88,7 +88,7 @@ set statusline+=%w\ <%{&fileformat}>%\=\ [%o]\ %l,%c%V\/%L\ \ %P
 
 " Cursorline
 set cursorline
-"
+
 " Syntax stuff
 syntax enable
 filetype plugin indent on
@@ -105,7 +105,7 @@ let g:airline#extensions#tabline#enabled = 1
 " GUI config
 if has("gui_running")
   macmenu &File.New\ Tab key=<nop>
-  set guifont=Monaco\ For\ Powerline:h12
+  set guifont=Monaco\ For\ Powerline:h11
   set guioptions=A
   set guioptions-=r
   set guioptions-=R
