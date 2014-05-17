@@ -41,7 +41,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'ervandew/supertab'
 Plugin 'mattn/emmet-vim'
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'sjl/badwolf'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'bling/vim-airline'
 
@@ -67,9 +67,12 @@ set statusline+=%w\ <%{&fileformat}>%\=\ [%o]\ %l,%c%V\/%L\ \ %P
 set laststatus=2
 let g:airline_powerline_fonts=1
 
+"" Badwolf config
+let g:badwolf_darkgutter=1
+let g:badwolf_css_props_highlight=1
+
 " Colorscheme
-set background=dark
-colorscheme solarized
+colorscheme badwolf
 
 " Tabs
 noremap tt :tabnew<cr>
