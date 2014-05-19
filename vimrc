@@ -77,7 +77,7 @@ colorscheme badwolf
 " netrw config
 let g:netrw_banner=0
 let g:netrw_keepdir=0
-let g:netrw_liststyle=1
+let g:netrw_liststyle=3
 
 " Tabs
 noremap tt :tabnew<cr>
