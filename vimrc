@@ -74,6 +74,11 @@ let g:badwolf_css_props_highlight=1
 " Colorscheme
 colorscheme badwolf
 
+" netrw config
+let g:netrw_banner=0
+let g:netrw_keepdir=0
+let g:netrw_liststyle=1
+
 " Tabs
 noremap tt :tabnew<cr>
 noremap tp :tabp<cr>
