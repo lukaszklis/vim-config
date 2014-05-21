@@ -38,12 +38,12 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'godlygeek/tabular'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-commentary'
-Plugin 'jiangmiao/auto-pairs'
 Plugin 'ervandew/supertab'
 Plugin 'mattn/emmet-vim'
-Plugin 'sjl/badwolf'
+Plugin 'w0ng/vim-hybrid'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'bling/vim-airline'
+Plugin 'paranoida/vim-airlineish'
 
 " Bundles config
 
@@ -66,13 +66,10 @@ set statusline+=%{fugitive#statusline()}%=
 set statusline+=%w\ <%{&fileformat}>%\=\ [%o]\ %l,%c%V\/%L\ \ %P
 set laststatus=2
 let g:airline_powerline_fonts=1
-
-"" Badwolf config
-let g:badwolf_darkgutter=1
-let g:badwolf_css_props_highlight=1
+let g:airline_theme = 'airlineish'
 
 " Colorscheme
-colorscheme badwolf
+colorscheme hybrid
 
 " netrw config
 let g:netrw_banner=0
