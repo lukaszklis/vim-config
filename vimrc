@@ -43,7 +43,6 @@ Plugin 'mattn/emmet-vim'
 Plugin 'w0ng/vim-hybrid'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'bling/vim-airline'
-Plugin 'paranoida/vim-airlineish'
 
 " Bundles config
 
@@ -66,7 +65,6 @@ set statusline+=%{fugitive#statusline()}%=
 set statusline+=%w\ <%{&fileformat}>%\=\ [%o]\ %l,%c%V\/%L\ \ %P
 set laststatus=2
 let g:airline_powerline_fonts=1
-let g:airline_theme = 'airlineish'
 
 " Colorscheme
 colorscheme hybrid
