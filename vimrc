@@ -40,7 +40,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-commentary'
 Plugin 'ervandew/supertab'
 Plugin 'mattn/emmet-vim'
-Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
+Plugin 'sickill/vim-monokai'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'bling/vim-airline'
 
@@ -67,7 +67,7 @@ set laststatus=2
 let g:airline_powerline_fonts=1
 
 " Colorscheme
-colorscheme tomorrow-night
+colorscheme monokai
 
 " netrw config
 let g:netrw_banner=0
@@ -98,7 +98,7 @@ syntax enable
 " GUI config
 if has("gui_running")
   macmenu &File.New\ Tab key=<nop>
-  set guifont=Menlo\ For\ Powerline:h11
+  set guifont=Menlo\ For\ Powerline:h12
   set guioptions=A
   set guioptions-=r
   set guioptions-=R
