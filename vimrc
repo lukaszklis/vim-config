@@ -3,6 +3,9 @@ set number
 set encoding=utf-8
 set clipboard=unnamed
 
+" Better ESC key
+imap jk <ESC>
+
 " Whitespace config
 set tabstop=2
 set shiftwidth=2
