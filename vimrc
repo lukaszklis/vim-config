@@ -43,9 +43,10 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-commentary'
 Plugin 'ervandew/supertab'
 Plugin 'mattn/emmet-vim'
-Plugin 'sickill/vim-monokai'
+Plugin 'w0ng/vim-hybrid'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'bling/vim-airline'
+Plugin 'paranoida/vim-airlineish'
 
 " Bundles config
 
@@ -68,9 +69,11 @@ set statusline+=%{fugitive#statusline()}%=
 set statusline+=%w\ <%{&fileformat}>%\=\ [%o]\ %l,%c%V\/%L\ \ %P
 set laststatus=2
 let g:airline_powerline_fonts=1
+let g:airline_theme='airlineish'
 
 " Colorscheme
-colorscheme monokai
+let g:hybrid_use_iTerm_colors=1
+colorscheme hybrid
 
 " netrw config
 let g:netrw_banner=0
