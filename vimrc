@@ -47,6 +47,8 @@ Plugin 'w0ng/vim-hybrid'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'bling/vim-airline'
 Plugin 'paranoida/vim-airlineish'
+Plugin 'scrooloose/syntastic'
+Plugin 'mattn/gist-vim'
 
 " Bundles config
 
@@ -70,6 +72,19 @@ set statusline+=%w\ <%{&fileformat}>%\=\ [%o]\ %l,%c%V\/%L\ \ %P
 set laststatus=2
 let g:airline_powerline_fonts=1
 let g:airline_theme='airlineish'
+let g:airline#extensions#tabline#enabled=1
+
+"" Syntastic config
+let g:syntastic_check_on_open=0
+let g:syntastic_echo_current_error=0
+let g:syntastic_auto_jump=0
+let g:syntastic_auto_loc_list=0
+
+"" Gist config
+let g:gist_clip_command='pbcopy'
+let g:gist_detect_filetype=1
+let g:gist_open_browser_after_post=1
+let g:gist_show_privates=1
 
 " Colorscheme
 let g:hybrid_use_iTerm_colors=1
@@ -104,10 +119,11 @@ syntax enable
 " GUI config
 if has("gui_running")
   macmenu &File.New\ Tab key=<nop>
-  set guifont=Menlo\ For\ Powerline:h12
+  set guifont=Monaco\ For\ Powerline:h12
   set guioptions=A
   set guioptions-=r
   set guioptions-=R
   set guioptions-=l
   set go-=L
+  set mouse=v
 end
