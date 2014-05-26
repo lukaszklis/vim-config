@@ -1,7 +1,10 @@
 " Base
+set nocompatible
+set ttyfast
 set number
 set encoding=utf-8
 set clipboard=unnamed
+set backspace=indent,eol,start
 
 " Better ESC key
 imap jk <ESC>
@@ -27,7 +30,6 @@ set ruler
 set colorcolumn=120
 
 " Vundle config
-set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
@@ -43,12 +45,13 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-commentary'
 Plugin 'ervandew/supertab'
 Plugin 'mattn/emmet-vim'
-Plugin 'w0ng/vim-hybrid'
+Plugin 'sjl/badwolf'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'bling/vim-airline'
-Plugin 'paranoida/vim-airlineish'
 Plugin 'scrooloose/syntastic'
 Plugin 'mattn/gist-vim'
+Plugin 'tpope/vim-surround'
+Plugin 'Townk/vim-autoclose'
 
 " Bundles config
 
@@ -71,8 +74,6 @@ set statusline+=%{fugitive#statusline()}%=
 set statusline+=%w\ <%{&fileformat}>%\=\ [%o]\ %l,%c%V\/%L\ \ %P
 set laststatus=2
 let g:airline_powerline_fonts=1
-let g:airline_theme='airlineish'
-let g:airline#extensions#tabline#enabled=1
 
 "" Syntastic config
 let g:syntastic_check_on_open=0
@@ -86,9 +87,14 @@ let g:gist_detect_filetype=1
 let g:gist_open_browser_after_post=1
 let g:gist_show_privates=1
 
+" Autoclose
+let g:AutoClosePairs={'(': ')', '{': '}', '[': ']', '"': '"', "'": "'", '#{': '}'}
+let g:AutoCloseProtectedRegions = ["Character"]
+
 " Colorscheme
-let g:hybrid_use_iTerm_colors=1
-colorscheme hybrid
+colorscheme badwolf
+let g:badwolf_darkgutter=1
+let g:badwolf_css_props_highlight=1
 
 " netrw config
 let g:netrw_banner=0
@@ -115,6 +121,9 @@ nnoremap cc :set cursorcolumn!<CR>
 
 " Syntax highlightning
 syntax enable
+
+" Git config
+vmap <Leader>gb :Gblame<cr>
 
 " GUI config
 if has("gui_running")
