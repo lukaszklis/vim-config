@@ -45,7 +45,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-commentary'
 Plugin 'ervandew/supertab'
 Plugin 'mattn/emmet-vim'
-Plugin 'sjl/badwolf'
+Plugin 'lukaszklis/badwolf'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/syntastic'
@@ -74,6 +74,7 @@ set statusline+=%{fugitive#statusline()}%=
 set statusline+=%w\ <%{&fileformat}>%\=\ [%o]\ %l,%c%V\/%L\ \ %P
 set laststatus=2
 let g:airline_powerline_fonts=1
+let g:airline#extensions#tabline#enabled=1
 
 "" Syntastic config
 let g:syntastic_check_on_open=0
