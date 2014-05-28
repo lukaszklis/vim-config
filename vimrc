@@ -52,6 +52,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'mattn/gist-vim'
 Plugin 'tpope/vim-surround'
 Plugin 'Townk/vim-autoclose'
+Plugin 'bogado/file-line'
 
 " Bundles config
 
