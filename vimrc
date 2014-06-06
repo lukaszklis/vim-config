@@ -5,6 +5,9 @@ set number
 set encoding=utf-8
 set clipboard=unnamed
 set backspace=indent,eol,start
+set nobackup
+set nowritebackup
+set noswapfile
 
 " Better ESC key
 imap jk <ESC>
@@ -48,7 +51,6 @@ Plugin 'mattn/emmet-vim'
 Plugin 'lukaszklis/badwolf'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'bling/vim-airline'
-Plugin 'scrooloose/syntastic'
 Plugin 'mattn/gist-vim'
 Plugin 'tpope/vim-surround'
 Plugin 'Townk/vim-autoclose'
@@ -76,12 +78,6 @@ set statusline+=%w\ <%{&fileformat}>%\=\ [%o]\ %l,%c%V\/%L\ \ %P
 set laststatus=2
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
-
-"" Syntastic config
-let g:syntastic_check_on_open=0
-let g:syntastic_echo_current_error=0
-let g:syntastic_auto_jump=0
-let g:syntastic_auto_loc_list=0
 
 "" Gist config
 let g:gist_clip_command='pbcopy'
