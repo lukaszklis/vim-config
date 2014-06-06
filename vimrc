@@ -9,7 +9,6 @@ set nobackup
 set nowritebackup
 set noswapfile
 set gcr=a:blinkon0 " no cursor blinking
-set cul " current line highlightning
 
 " Scrolling
 set scrolloff=8
