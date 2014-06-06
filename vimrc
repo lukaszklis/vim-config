@@ -8,6 +8,13 @@ set backspace=indent,eol,start
 set nobackup
 set nowritebackup
 set noswapfile
+set gcr=a:blinkon0 " no cursor blinking
+set cul " current line highlightning
+
+" Scrolling
+set scrolloff=8
+set sidescrolloff=15
+set sidescroll=1
 
 " Better ESC key
 imap jk <ESC>
@@ -20,6 +27,8 @@ set list
 set listchars=trail:.
 autocmd BufWritePre * :%s/\s\+$//e " strip trailing whitespace
 set autoindent
+set smartindent
+set smarttab
 set nowrap
 
 " Search config
@@ -55,6 +64,7 @@ Plugin 'mattn/gist-vim'
 Plugin 'tpope/vim-surround'
 Plugin 'Townk/vim-autoclose'
 Plugin 'bogado/file-line'
+Plugin 'Lokaltog/vim-easymotion'
 
 " Bundles config
 
@@ -84,6 +94,12 @@ let g:gist_clip_command='pbcopy'
 let g:gist_detect_filetype=1
 let g:gist_open_browser_after_post=1
 let g:gist_show_privates=1
+
+"" EasyMotion config
+nmap s <Plug>(easymotion-s2)
+nmap t <Plug>(easymotion-t2)
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
 
 " Autoclose
 let g:AutoClosePairs={'(': ')', '{': '}', '[': ']', '"': '"', "'": "'", '#{': '}'}
