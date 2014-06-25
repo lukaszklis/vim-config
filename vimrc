@@ -63,7 +63,6 @@ Plugin 'mattn/gist-vim'
 Plugin 'tpope/vim-surround'
 Plugin 'Townk/vim-autoclose'
 Plugin 'bogado/file-line'
-Plugin 'Lokaltog/vim-easymotion'
 
 " Bundles config
 
@@ -93,10 +92,6 @@ let g:gist_clip_command='pbcopy'
 let g:gist_detect_filetype=1
 let g:gist_open_browser_after_post=1
 let g:gist_show_privates=1
-
-"" EasyMotion config
-nmap s <Plug>(easymotion-s2)
-nmap t <Plug>(easymotion-t2)
 
 " Autoclose
 let g:AutoClosePairs={'(': ')', '{': '}', '[': ']', '"': '"', "'": "'", '#{': '}'}
