@@ -46,23 +46,23 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
 
 " Bundles
-Plugin 'gmarik/Vundle.vim'
-Plugin 'kien/ctrlp.vim'
-Plugin 'grep.vim'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-fugitive'
-Plugin 'godlygeek/tabular'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'tpope/vim-commentary'
+Plugin 'bling/vim-airline'
+Plugin 'bogado/file-line'
 Plugin 'ervandew/supertab'
+Plugin 'gmarik/Vundle.vim'
+Plugin 'godlygeek/tabular'
+Plugin 'grep.vim'
+Plugin 'kien/ctrlp.vim'
 Plugin 'mattn/emmet-vim'
+Plugin 'mattn/gist-vim'
 Plugin 'lukaszklis/badwolf'
 Plugin 'sheerun/vim-polyglot'
-Plugin 'bling/vim-airline'
-Plugin 'mattn/gist-vim'
-Plugin 'tpope/vim-surround'
 Plugin 'Townk/vim-autoclose'
-Plugin 'bogado/file-line'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-surround'
 
 " Bundles config
 
