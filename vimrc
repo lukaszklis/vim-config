@@ -47,7 +47,6 @@ call vundle#rc()
 
 " Bundles
 Plugin 'gmarik/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'grep.vim'
 Plugin 'tpope/vim-rails'
@@ -103,9 +102,12 @@ colorscheme badwolf
 let g:badwolf_darkgutter=1
 let g:badwolf_css_props_highlight=1
 
-" NERDTree bindings
-noremap ,d :NERDTreeToggle<cr>
-noremap ,f :NERDTreeFind<cr>
+" netrw config
+let g:netrw_banner=0
+let g:netrw_keepdir=0
+let g:netrw_liststyle=0
+noremap ,f :Explore<cr>
+noremap ,d :Explore!<cr>
 
 " Tabs
 noremap tt :tabnew<cr>
