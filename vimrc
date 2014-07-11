@@ -121,6 +121,10 @@ noremap ,c :nohl<cr>
 " Splits
 noremap ,v :vsp^<cr>
 noremap ,h :split^<cr>
+nmap <silent> <Up> :wincmd k<CR>
+nmap <silent> <Down> :wincmd j<CR>
+nmap <silent> <Left> :wincmd h<CR>
+nmap <silent> <Right> :wincmd l<CR>
 
 " Column marker
 nnoremap cc :set cursorcolumn!<CR>
