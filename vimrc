@@ -36,6 +36,15 @@ set smartcase
 set wildignore+=*.o,*.obj,.git,*.rbc,*.pyc,*.zip,*.gz,*.bz,*.tar,*.jpg,*.png,*.gif,*.avi,*.wmv,*.ogg,*.mp3,*.mov,*.orig
 set wildignore+=*.DS_Store,*/.sass-cache/,*/.vagrant/,*/tmp/*,*.pdf,*/node_modules/*,*/dist/*,*/bower_components/*
 
+" The Silver Searcher
+if executable('ag')
+  " Use ag over grep
+  set grepprg=ag\ --nogroup\ --nocolor\ --ignore=tmp\ --ignore=public/assets\ --ignore=lib/checkout/coverage
+endif
+
+" bind K to grep word under cursor
+nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+
 " Rulers
 set ruler
 set colorcolumn=120
@@ -69,6 +78,42 @@ Plugin 'saihoooooooo/glowshi-ft.vim'
 
 "" CtrlP config
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+" Additional mapping for buffer search
+nnoremap <silent> ,b :CtrlPBuffer<cr>
+nnoremap <silent> <C-b> :CtrlPBuffer<cr>
+
+" Idea from : http://www.charlietanksley.net/blog/blog/2011/10/18/vim-navigation-with-lustyexplorer-and-lustyjuggler/
+" Open CtrlP starting from a particular path, making it much
+" more likely to find the correct thing first. mnemonic 'jump to [something]'
+map ,ja :CtrlP app<CR>
+map ,jA :CtrlP app/assets<CR>
+map ,jc :CtrlP app/controllers<CR>
+map ,jC :CtrlP config<CR>
+map ,jd :CtrlP db<CR>
+map ,jh :CtrlP app/helpers<CR>
+map ,jj :CtrlP app/assets/javascripts<CR>
+map ,jl :CtrlP lib<CR>
+map ,jm :CtrlP app/models<CR>
+map ,jM :CtrlP app/mailers<CR>
+map ,jp :CtrlP public<CR>
+map ,js :CtrlP spec<CR>
+map ,jS :CtrlP app/assets/stylesheets<CR>
+map ,jv :CtrlP app/views<CR>
+map ,jV :CtrlP vendor<CR>
+
+" The top results seems to be better. Also, we want more results, so lets go
+" with 30
+let g:ctrlp_match_window='order:ttb,max:20'
+
+if executable('ag')
+  " Use ag (the Silver Searcher) in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+  " ag is fast enough that CtrlP doesn't need to cache
+  let g:ctrlp_use_caching = 0
+endif
+
 
 "" grep config
 map ff :Rgrep<CR>
