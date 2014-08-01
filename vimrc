@@ -1,7 +1,6 @@
 " Base
 set nocompatible
 set ttyfast
-set number
 set encoding=utf-8
 set clipboard=unnamed
 set backspace=indent,eol,start
