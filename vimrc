@@ -73,6 +73,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-surround'
 Plugin 'saihoooooooo/glowshi-ft.vim'
+Plugin 'scrooloose/syntastic'
 
 " Bundles config
 
