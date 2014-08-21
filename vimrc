@@ -8,6 +8,10 @@ set nobackup
 set nowritebackup
 set noswapfile
 set gcr=a:blinkon0 " no cursor blinking
+set visualbell
+set noerrorbells
+set showmatch
+nnoremap ; :
 
 " Scrolling
 set scrolloff=8
@@ -20,16 +24,19 @@ imap jk <ESC>
 " Whitespace config
 set tabstop=2
 set shiftwidth=2
+set shiftround
 set expandtab
 set list
 set listchars=trail:.
 autocmd BufWritePre * :%s/\s\+$//e " strip trailing whitespace
 set autoindent
+set copyindent
 set smartindent
 set smarttab
 set nowrap
 
 " Search config
+set incsearch
 set ignorecase
 set smartcase
 set wildignore+=*.o,*.obj,.git,*.rbc,*.pyc,*.zip,*.gz,*.bz,*.tar,*.jpg,*.png,*.gif,*.avi,*.wmv,*.ogg,*.mp3,*.mov,*.orig
