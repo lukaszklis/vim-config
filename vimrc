@@ -79,7 +79,6 @@ Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-surround'
-Plugin 'saihoooooooo/glowshi-ft.vim'
 Plugin 'scrooloose/syntastic'
 
 " Bundles config
@@ -121,7 +120,6 @@ if executable('ag')
   " ag is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
 endif
-
 
 "" grep config
 map ff :Rgrep<CR>
