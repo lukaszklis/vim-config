@@ -1,5 +1,4 @@
 " Base
-set nocompatible
 set ttyfast
 set encoding=utf-8
 set clipboard=unnamed
@@ -64,27 +63,41 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
 
+" NeoBundle
+if has('vim_starting')
+  set nocompatible
+  set runtimepath+=~/.vim/bundle/neobundle.vim
+endif
+
+call neobundle#begin(expand('~/.vim/bundle/'))
+NeoBundleFetch 'Shougo/neobundle.vim'
+
 " Bundles
-Plugin 'airblade/vim-gitgutter'
-Plugin 'bling/vim-airline'
-Plugin 'bogado/file-line'
-Plugin 'ervandew/supertab'
-Plugin 'gmarik/Vundle.vim'
-Plugin 'godlygeek/tabular'
-Plugin 'grep.vim'
-Plugin 'kien/ctrlp.vim'
-Plugin 'mattn/emmet-vim'
-Plugin 'mattn/gist-vim'
-Plugin 'mattn/webapi-vim'
-Plugin 'lukaszklis/badwolf'
-Plugin 'sheerun/vim-polyglot'
-Plugin 'Townk/vim-autoclose'
-Plugin 'tpope/vim-commentary'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-surround'
-Plugin 'scrooloose/syntastic'
-Plugin 'scrooloose/nerdtree'
+NeoBundle 'airblade/vim-gitgutter'
+NeoBundle 'bling/vim-airline'
+NeoBundle 'bogado/file-line'
+NeoBundle 'ervandew/supertab'
+NeoBundle 'gmarik/Vundle.vim'
+NeoBundle 'godlygeek/tabular'
+NeoBundle 'grep.vim'
+NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'mattn/emmet-vim'
+NeoBundle 'mattn/gist-vim'
+NeoBundle 'mattn/webapi-vim'
+NeoBundle 'lukaszklis/badwolf'
+NeoBundle 'sheerun/vim-polyglot'
+NeoBundle 'Townk/vim-autoclose'
+NeoBundle 'tpope/vim-commentary'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'tpope/vim-rails'
+NeoBundle 'tpope/vim-surround'
+NeoBundle 'scrooloose/syntastic'
+NeoBundle 'scrooloose/nerdtree'
+
+call neobundle#end()
+
+syntax on
+filetype plugin indent on
 
 " Bundles config
 
@@ -194,9 +207,6 @@ nmap <silent> <Right> :wincmd l<CR>
 " Column marker
 nnoremap cc :set cursorcolumn!<CR>
 
-" Syntax highlightning
-syntax enable
-
 " Git config
 vmap <Leader>gb :Gblame<cr>
 
@@ -211,3 +221,5 @@ if has("gui_running")
   set go-=L
   set mouse=v
 end
+
+NeoBundleCheck
