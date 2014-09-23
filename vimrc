@@ -84,6 +84,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdtree'
 
 " Bundles config
 
@@ -149,21 +150,29 @@ let g:gist_detect_filetype=1
 let g:gist_open_browser_after_post=1
 let g:gist_show_privates=1
 
-" Autoclose
+"" vim-fugitive config
+nmap ,gs :Gstatus<cr>
+nmap ,gd :Gdiff<cr>
+nmap ,gb :Gblame<cr>
+
+"" Autoclose
 let g:AutoClosePairs={'(': ')', '{': '}', '[': ']', '"': '"', "'": "'", '#{': '}'}
 let g:AutoCloseProtectedRegions = ["Character"]
+
+"" Syntastic
+let g:syntastic_check_on_open=1
+let g:syntastic_echo_current_error=0
+let g:syntastic_auto_jump=0
+let g:syntastic_auto_loc_list=0
 
 " Colorscheme
 colorscheme badwolf
 let g:badwolf_darkgutter=1
 let g:badwolf_css_props_highlight=1
 
-" netrw config
-let g:netrw_banner=0
-let g:netrw_keepdir=0
-let g:netrw_liststyle=0
-noremap ,f :Explore<cr>
-noremap ,d :Explore!<cr>
+" NERDTree config
+noremap ,f :NERDTreeFind<cr>
+noremap ,d :NERDTreeToggle<cr>
 
 " Tabs
 noremap tt :tabnew<cr>
