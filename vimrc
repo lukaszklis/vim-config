@@ -58,11 +58,6 @@ nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 set ruler
 set colorcolumn=120
 
-" Vundle config
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#rc()
-
 " NeoBundle
 if has('vim_starting')
   set nocompatible
@@ -77,7 +72,6 @@ NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'bogado/file-line'
 NeoBundle 'ervandew/supertab'
-NeoBundle 'gmarik/Vundle.vim'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'grep.vim'
 NeoBundle 'kien/ctrlp.vim'
