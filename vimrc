@@ -173,9 +173,9 @@ let g:syntastic_auto_jump=0
 let g:syntastic_auto_loc_list=0
 
 " Colorscheme
-colorscheme badwolf
 let g:badwolf_darkgutter=1
 let g:badwolf_css_props_highlight=1
+colorscheme badwolf
 
 " NERDTree config
 noremap ,f :NERDTreeFind<cr>
