@@ -87,6 +87,7 @@ NeoBundle 'tpope/vim-rails'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'edkolev/tmuxline.vim'
 
 call neobundle#end()
 
@@ -171,6 +172,9 @@ let g:syntastic_check_on_open=1
 let g:syntastic_echo_current_error=0
 let g:syntastic_auto_jump=0
 let g:syntastic_auto_loc_list=0
+
+"" tmuxline
+let g:tmuxline_powerline_separators=0
 
 " Colorscheme
 let g:badwolf_darkgutter=1
