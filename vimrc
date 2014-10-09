@@ -78,6 +78,7 @@ NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'mattn/gist-vim'
 NeoBundle 'mattn/webapi-vim'
+NeoBundle 'maksimr/vim-jsbeautify'
 NeoBundle 'lukaszklis/badwolf'
 NeoBundle 'sheerun/vim-polyglot'
 NeoBundle 'Townk/vim-autoclose'
@@ -169,9 +170,13 @@ let g:AutoCloseProtectedRegions = ["Character"]
 
 "" Syntastic
 let g:syntastic_check_on_open=1
-let g:syntastic_echo_current_error=0
+let g:syntastic_echo_current_error=1
 let g:syntastic_auto_jump=0
 let g:syntastic_auto_loc_list=0
+let g:syntastic_javascript_checkers=['jshint']
+
+"" vim-jsbeautify
+map ,jsb :call JsBeautify()<cr>
 
 "" tmuxline
 let g:tmuxline_powerline_separators=0
