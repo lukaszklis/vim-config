@@ -85,7 +85,6 @@ NeoBundle 'tpope/vim-rails'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'edkolev/tmuxline.vim'
 
 call neobundle#end()
 
@@ -175,11 +174,8 @@ let g:syntastic_javascript_checkers=['jshint']
 "" vim-jsbeautify
 map ,jsb :call JsBeautify()<cr>
 
-"" tmuxline
-let g:tmuxline_powerline_separators=0
-
 " Colorscheme
-" let g:badwolf_darkgutter=1
+let g:badwolf_darkgutter=1
 let g:badwolf_css_props_highlight=1
 colorscheme badwolf
 
