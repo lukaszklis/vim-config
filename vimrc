@@ -14,15 +14,12 @@ set number
 set cursorline
 nnoremap ; :
 set title
+set lazyredraw
 
 " Scrolling
 set scrolloff=8
 set sidescrolloff=15
 set sidescroll=1
-
-" Better ESC key
-imap jk <ESC>
-noremap! <F1> <ESC>
 
 " Whitespace config
 set tabstop=2
@@ -136,7 +133,7 @@ if executable('ag')
 endif
 
 "" grep config
-map ff :Rgrep<CR>
+map ,s :Rgrep<CR>
 au FileType qf nmap <buffer> <cr> <cr><c-w><c-p>
 let Grep_Skip_Files = '*.bak *~ *tags *.log *.orig'
 let Grep_Skip_Dirs = '.git .svn .hg .tmp .sass-cache'
@@ -182,7 +179,7 @@ map ,jsb :call JsBeautify()<cr>
 let g:tmuxline_powerline_separators=0
 
 " Colorscheme
-let g:badwolf_darkgutter=1
+" let g:badwolf_darkgutter=1
 let g:badwolf_css_props_highlight=1
 colorscheme badwolf
 
@@ -212,6 +209,9 @@ nnoremap cc :set cursorcolumn!<CR>
 
 " Git config
 vmap <Leader>gb :Gblame<cr>
+
+nnoremap j gj
+nnoremap k gk
 
 " GUI config
 if has("gui_running")
