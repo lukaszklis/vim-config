@@ -85,6 +85,7 @@ NeoBundle 'tpope/vim-rails'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'kristijanhusak/vim-multiple-cursors'
 
 call neobundle#end()
 
@@ -182,6 +183,13 @@ colorscheme badwolf
 " NERDTree config
 noremap ,f :NERDTreeFind<cr>
 noremap ,d :NERDTreeToggle<cr>
+
+"" vim-multi-cursors
+let g:multi_cursor_use_default_mapping=0
+let g:multi_cursor_next_key='<C-m>'
+let g:multi_cursor_prev_key='<C-n>'
+let g:multi_cursor_skip_key='<C-x>'
+let g:multi_cursor_quit_key='<Esc>'
 
 " Tabs
 noremap tt :tabnew<cr>
