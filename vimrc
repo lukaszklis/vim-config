@@ -77,6 +77,7 @@ NeoBundle 'mattn/gist-vim'
 NeoBundle 'mattn/webapi-vim'
 NeoBundle 'maksimr/vim-jsbeautify'
 NeoBundle 'lukaszklis/badwolf'
+NeoBundle 'jonathanfilip/vim-lucius'
 NeoBundle 'sheerun/vim-polyglot'
 NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'tpope/vim-commentary'
@@ -176,10 +177,10 @@ let g:syntastic_javascript_checkers=['jshint']
 map ,jsb :call JsBeautify()<cr>
 
 " Colorscheme
-let g:badwolf_darkgutter=1
-let g:badwolf_css_props_highlight=1
-let g:badwolf_html_link_underline=0
-colorscheme badwolf
+let g:lucius_style='dark'
+let g:lucius_contrast='low'
+let g:lucius_contrast_bg='low'
+colorscheme lucius
 
 "" NERDTree config
 noremap ,f :NERDTreeFind<cr>
