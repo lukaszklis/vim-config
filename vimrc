@@ -10,7 +10,6 @@ set gcr=a:blinkon0 " no cursor blinking
 set visualbell
 set noerrorbells
 set showmatch
-set number
 set cursorline
 nnoremap ; :
 set title
