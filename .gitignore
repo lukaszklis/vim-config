@@ -1,3 +1,4 @@
 .netrwhist
 vim/bundle/*
+!vim/bundle/Vundle.vim/
 .viminfo
