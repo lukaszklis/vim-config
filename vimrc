@@ -3,6 +3,7 @@ set ttyfast
 set lazyredraw
 set encoding=utf-8
 set nocompatible
+set ruler
 filetype off
 
 " Backups
@@ -43,6 +44,7 @@ Plugin 'morhetz/gruvbox'
 
 call vundle#end()
 
+syntax on
 filetype plugin indent on
 
 " Colorscheme
