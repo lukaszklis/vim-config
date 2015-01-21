@@ -6,14 +6,14 @@ set backspace=indent,eol,start
 set nobackup
 set nowritebackup
 set noswapfile
-set gcr=a:blinkon0 " no cursor blinking
-set visualbell
-set noerrorbells
-set showmatch
-set cursorline
-nnoremap ; :
-set title
+" set gcr=a:blinkon0 " no cursor blinking
+" set visualbell
+" set noerrorbells
+" set showmatch
 set lazyredraw
+nnoremap ; :
+nnoremap j gj
+nnoremap k gk
 
 " Scrolling
 set scrolloff=8
@@ -25,8 +25,6 @@ set tabstop=2
 set shiftwidth=2
 set shiftround
 set expandtab
-set list
-set listchars=trail:.
 autocmd BufWritePre * :%s/\s\+$//e " strip trailing whitespace
 set autoindent
 set copyindent
@@ -40,19 +38,16 @@ set ignorecase
 set smartcase
 set wildignore+=*.o,*.obj,.git,*.rbc,*.pyc,*.zip,*.gz,*.bz,*.tar,*.jpg,*.png,*.gif,*.avi,*.wmv,*.ogg,*.mp3,*.mov,*.orig
 set wildignore+=*.DS_Store,*/.sass-cache/,*/.vagrant/,*/tmp/*,*.pdf,*/node_modules/*,*/dist/*,*/bower_components/*
+set hlsearch
 
-" The Silver Searcher
+"" The Silver Searcher
 if executable('ag')
   " Use ag over grep
   set grepprg=ag\ --nogroup\ --nocolor\ --ignore=tmp\ --ignore=public/assets\ --ignore=lib/checkout/coverage
 endif
 
-" bind K to grep word under cursor
+"" bind K to grep word under cursor
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
-
-" Rulers
-set ruler
-set colorcolumn=120
 
 " NeoBundle
 if has('vim_starting')
@@ -196,10 +191,6 @@ noremap tt :tabnew<cr>
 noremap tp :tabp<cr>
 noremap tn :tabn<cr>
 
-" Highlightning
-set hlsearch
-noremap ,c :nohl<cr>
-
 " Splits
 noremap ,v :vsp^<cr>
 noremap ,h :split^<cr>
@@ -207,15 +198,6 @@ nmap <silent> <Up> :wincmd k<CR>
 nmap <silent> <Down> :wincmd j<CR>
 nmap <silent> <Left> :wincmd h<CR>
 nmap <silent> <Right> :wincmd l<CR>
-
-" Column marker
-nnoremap cc :set cursorcolumn!<CR>
-
-" Git config
-vmap <Leader>gb :Gblame<cr>
-
-nnoremap j gj
-nnoremap k gk
 
 " GUI config
 if has("gui_running")
