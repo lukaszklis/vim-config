@@ -4,6 +4,7 @@ set lazyredraw
 set encoding=utf-8
 set nocompatible
 set ruler
+set clipboard=unnamed
 filetype off
 
 " Backups
@@ -40,7 +41,7 @@ Plugin 'sheerun/vim-polyglot'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-surround'
 Plugin 'bogado/file-line'
-Plugin 'morhetz/gruvbox'
+Plugin 'lukaszklis/badwolf'
 
 call vundle#end()
 
@@ -48,8 +49,9 @@ syntax on
 filetype plugin indent on
 
 " Colorscheme
-set background=dark
-colorscheme gruvbox
+let g:badwolf_css_props_highlight=1
+let g:badwolf_html_link_underline=0
+colorscheme badwolf
 
 " Remaps
 nnoremap ; :
