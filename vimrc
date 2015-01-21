@@ -6,10 +6,6 @@ set backspace=indent,eol,start
 set nobackup
 set nowritebackup
 set noswapfile
-" set gcr=a:blinkon0 " no cursor blinking
-" set visualbell
-" set noerrorbells
-" set showmatch
 set lazyredraw
 nnoremap ; :
 nnoremap j gj
