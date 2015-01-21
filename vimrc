@@ -66,7 +66,6 @@ NeoBundle 'mattn/emmet-vim'
 NeoBundle 'mattn/gist-vim'
 NeoBundle 'mattn/webapi-vim'
 NeoBundle 'maksimr/vim-jsbeautify'
-NeoBundle 'lukaszklis/badwolf'
 NeoBundle 'sheerun/vim-polyglot'
 NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'tpope/vim-commentary'
@@ -76,6 +75,7 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'kristijanhusak/vim-multiple-cursors'
+NeoBundle 'morhetz/gruvbox'
 
 call neobundle#end()
 
@@ -166,10 +166,8 @@ let g:syntastic_javascript_checkers=['jshint']
 map ,jsb :call JsBeautify()<cr>
 
 " Colorscheme
-let g:badwolf_darkgutter=1
-let g:badwolf_css_props_highlight=1
-let g:badwolf_html_link_underline=0
-colorscheme badwolf
+set background=dark
+colorscheme gruvbox
 
 "" NERDTree config
 noremap ,f :NERDTreeFind<cr>
