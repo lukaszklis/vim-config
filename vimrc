@@ -43,6 +43,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'bogado/file-line'
 Plugin 'lukaszklis/badwolf'
 Plugin 'kien/ctrlp.vim'
+Plugin 'mattn/emmet-vim'
 
 call vundle#end()
 
@@ -64,6 +65,9 @@ endif
 let g:badwolf_css_props_highlight=1
 let g:badwolf_html_link_underline=0
 colorscheme badwolf
+
+" Emmet
+let g:user_emmet_leader_key='<C-e>'
 
 " Remaps
 nnoremap ; :
