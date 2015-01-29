@@ -67,7 +67,7 @@ let g:badwolf_html_link_underline=0
 colorscheme badwolf
 
 " Emmet
-let g:user_emmet_leader_key='<C-e>'
+let g:user_emmet_expandabbr_key='<c-e>'
 
 " Remaps
 nnoremap ; :
