@@ -44,6 +44,7 @@ Plugin 'bogado/file-line'
 Plugin 'lukaszklis/badwolf'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mattn/emmet-vim'
+Plugin 'mxw/vim-jsx'
 
 call vundle#end()
 
