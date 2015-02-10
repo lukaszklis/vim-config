@@ -47,6 +47,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'mxw/vim-jsx'
 Plugin 'edkolev/tmuxline.vim'
+Plugin 'terryma/vim-multiple-cursors'
 
 call vundle#end()
 
@@ -74,6 +75,13 @@ colorscheme badwolf
 
 " Emmet
 let g:user_emmet_expandabbr_key='<c-e>'
+
+" Multiple cursors
+let g:multi_cursor_use_default_mapping=0
+let g:multi_cursor_next_key='<C-d>'
+let g:multi_cursor_prev_key='<C-a>'
+let g:multi_cursor_skip_key='<C-s>'
+let g:multi_cursor_quit_key='<Esc>'
 
 " Remaps
 nnoremap ; :
