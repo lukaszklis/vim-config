@@ -47,7 +47,11 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'mxw/vim-jsx'
 Plugin 'edkolev/tmuxline.vim'
-" Plugin 'terryma/vim-multiple-cursors'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rails'
+Plugin 'Townk/vim-autoclose'
+Plugin 'grep.vim'
+Plugin 'terryma/vim-multiple-cursors'
 
 call vundle#end()
 
@@ -77,11 +81,11 @@ colorscheme badwolf
 let g:user_emmet_expandabbr_key='<c-e>'
 
 " Multiple cursors
-" let g:multi_cursor_use_default_mapping=0
-" let g:multi_cursor_next_key='<C-d>'
-" let g:multi_cursor_prev_key='<C-a>'
-" let g:multi_cursor_skip_key='<C-s>'
-" let g:multi_cursor_quit_key='<Esc>'
+let g:multi_cursor_use_default_mapping=0
+let g:multi_cursor_next_key='<C-m>'
+let g:multi_cursor_prev_key='<C-n>'
+let g:multi_cursor_skip_key='<C-x>'
+let g:multi_cursor_quit_key='<Esc>'
 
 " Remaps
 nnoremap ; :
@@ -99,6 +103,12 @@ nmap <silent> <Left> :wincmd h<CR>
 nmap <silent> <Right> :wincmd l<CR>
 nnoremap <silent> ,b :CtrlPBuffer<cr>
 nnoremap <silent> <C-b> :CtrlPBuffer<cr>
+map ,s :Rgrep<CR>
+nmap ,gs :Gstatus<cr>
+nmap ,gd :Gdiff<cr>
+nmap ,gb :Gblame<cr>
+map H ^
+map L $
 
 " CtrlP + Rails
 map ,ja :CtrlP app<CR>
@@ -116,3 +126,12 @@ map ,js :CtrlP spec<CR>
 map ,jS :CtrlP app/assets/stylesheets<CR>
 map ,jv :CtrlP app/views<CR>
 map ,jV :CtrlP vendor<CR>
+
+" grep.vim
+au FileType qf nmap <buffer> <cr> <cr><c-w><c-p>
+let Grep_Skip_Files = '*.bak *~ *tags *.log *.orig'
+let Grep_Skip_Dirs = '.git .svn .hg .tmp .sass-cache bower_components node_modules'
+
+" Autoclose
+let g:AutoClosePairs={'(': ')', '{': '}', '[': ']', '"': '"', "'": "'", '#{': '}'}
+let g:AutoCloseProtectedRegions = ["Character"]
