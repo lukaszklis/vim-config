@@ -52,6 +52,7 @@ Plugin 'tpope/vim-rails'
 Plugin 'Townk/vim-autoclose'
 Plugin 'grep.vim'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'bling/vim-airline'
 
 call vundle#end()
 
@@ -86,6 +87,15 @@ let g:multi_cursor_next_key='<C-m>'
 let g:multi_cursor_prev_key='<C-n>'
 let g:multi_cursor_skip_key='<C-x>'
 let g:multi_cursor_quit_key='<Esc>'
+
+" Airline config
+set statusline=[%n]\ %<%f%m%r
+set statusline+=\ %{exists('g:loaded_rvm')?rvm#statusline():''}
+set statusline+=%{fugitive#statusline()}%=
+set statusline+=%w\ <%{&fileformat}>%\=\ [%o]\ %l,%c%V\/%L\ \ %P
+set laststatus=2
+let g:airline_powerline_fonts=1
+let g:airline#extensions#tabline#enabled=1
 
 " Remaps
 nnoremap ; :
