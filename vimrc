@@ -53,6 +53,7 @@ Plugin 'Townk/vim-autoclose'
 Plugin 'grep.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'bling/vim-airline'
+Plugin 'scrooloose/nerdtree'
 
 call vundle#end()
 
@@ -119,6 +120,8 @@ nmap ,gd :Gdiff<cr>
 nmap ,gb :Gblame<cr>
 map H ^
 map L $
+noremap ,f :NERDTreeFind<cr>
+noremap ,d :NERDTreeToggle<cr>
 
 " CtrlP + Rails
 map ,ja :CtrlP app<CR>
