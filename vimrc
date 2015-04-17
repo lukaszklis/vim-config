@@ -148,3 +148,13 @@ let Grep_Skip_Dirs = '.git .svn .hg .tmp .sass-cache bower_components node_modul
 " Autoclose
 let g:AutoClosePairs={'(': ')', '{': '}', '[': ']', '"': '"', "'": "'", '#{': '}'}
 let g:AutoCloseProtectedRegions = ["Character"]
+
+" MacVim setup
+if has("gui_macvim")
+  set guifont=Monaco\ For\ Powerline:h12
+  set guioptions=A
+  set guioptions-=r
+  set guioptions-=R
+  set guioptions-=l
+  set go-=L
+end
