@@ -46,7 +46,6 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'mxw/vim-jsx'
-Plugin 'edkolev/tmuxline.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rails'
 Plugin 'Townk/vim-autoclose'
@@ -70,9 +69,6 @@ if executable('ag')
   " ag is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
 endif
-
-" Tmuxline
-let g:tmuxline_powerline_separators=0
 
 " Colorscheme
 let g:badwolf_css_props_highlight=1
