@@ -41,8 +41,8 @@ Plugin 'sheerun/vim-polyglot'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-surround'
 Plugin 'bogado/file-line'
-Plugin 'lukaszklis/badwolf'
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'altercation/vim-colors-solarized' " Day theme
+Plugin 'lukaszklis/badwolf' " Night theme
 Plugin 'kien/ctrlp.vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'mxw/vim-jsx'
@@ -53,6 +53,7 @@ Plugin 'grep.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
+Plugin 'jonstoler/werewolf.vim'
 
 call vundle#end()
 
@@ -145,12 +146,9 @@ let Grep_Skip_Dirs = '.git .svn .hg .tmp .sass-cache bower_components node_modul
 let g:AutoClosePairs={'(': ')', '{': '}', '[': ']', '"': '"', "'": "'", '#{': '}'}
 let g:AutoCloseProtectedRegions = ["Character"]
 
-" MacVim setup
-if has("gui_macvim")
-  set guifont=Monaco\ For\ Powerline:h12
-  set guioptions=A
-  set guioptions-=r
-  set guioptions-=R
-  set guioptions-=l
-  set go-=L
-end
+" Werewolf
+
+let g:werewolf_day_themes = ['solarized']
+let g:werewolf_night_themes = ['badwolf']
+let g:werewolf_day_start = 8
+let g:werewolf_night_start = 20
