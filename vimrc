@@ -54,6 +54,7 @@ Plugin 'grep.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
+Plugin 'jonstoler/werewolf.vim'
 Plugin 'airblade/vim-gitgutter'
 
 call vundle#end()
@@ -149,6 +150,13 @@ let Grep_Skip_Dirs = '.git .svn .hg .tmp .sass-cache bower_components node_modul
 " Autoclose
 let g:AutoClosePairs={'(': ')', '{': '}', '[': ']', '"': '"', "'": "'", '#{': '}'}
 let g:AutoCloseProtectedRegions = ["Character"]
+
+" Werewolf
+
+let g:werewolf_day_themes = ['solarized']
+let g:werewolf_night_themes = ['badwolf']
+let g:werewolf_day_start = 8
+let g:werewolf_day_end = 19
 
 " MacVim setup
 if has("gui_macvim")
