@@ -160,6 +160,7 @@ let g:werewolf_day_end = 19
 
 " MacVim setup
 if has("gui_macvim")
+  set lines=999 " Fix for a stupid empty line issue...
   set guifont=Monaco\ For\ Powerline:h12
   set guioptions=A
   set guioptions-=r
