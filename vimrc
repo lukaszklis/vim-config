@@ -23,6 +23,7 @@ set autoindent
 set copyindent
 set smartindent
 set nowrap
+set colorcolumn=120
 
 " Search
 set incsearch
@@ -54,6 +55,7 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'kien/rainbow_parentheses.vim'
 
 call vundle#end()
 
@@ -146,6 +148,12 @@ let Grep_Skip_Dirs = '.git .svn .hg .tmp .sass-cache bower_components node_modul
 " Autoclose
 let g:AutoClosePairs={'(': ')', '{': '}', '[': ']', '"': '"', "'": "'", '#{': '}'}
 let g:AutoCloseProtectedRegions = ["Character"]
+
+" Rainbow
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
 
 " MacVim setup
 if has("gui_macvim")
