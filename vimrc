@@ -55,7 +55,6 @@ Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'kien/rainbow_parentheses.vim'
-Plugin 'wakatime/vim-wakatime'
 
 call vundle#end()
 
