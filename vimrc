@@ -101,10 +101,7 @@ let g:airline#extensions#tabline#enabled=1
 nnoremap ; :
 nnoremap j gj
 nnoremap k gk
-nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR> " grep word under cursor
 noremap tt :tabnew<cr>
-noremap tp :tabp<cr>
-noremap tn :tabn<cr>
 noremap ,v :vsp^<cr>
 noremap ,h :split^<cr>
 nmap <silent> <Up> :wincmd k<CR>
@@ -117,8 +114,6 @@ map ,s :Rgrep<CR>
 nmap ,gs :Gstatus<cr>
 nmap ,gd :Gdiff<cr>
 nmap ,gb :Gblame<cr>
-map H ^
-map L $
 noremap ,f :NERDTreeFind<cr>
 noremap ,d :NERDTreeToggle<cr>
 
