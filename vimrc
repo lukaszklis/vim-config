@@ -45,13 +45,13 @@ Plugin 'bogado/file-line'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mattn/emmet-vim'
-Plugin 'edkolev/tmuxline.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rails'
 Plugin 'Townk/vim-autoclose'
 Plugin 'grep.vim'
 Plugin 'terryma/vim-multiple-cursors'
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdtree'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'kien/rainbow_parentheses.vim'
@@ -72,9 +72,6 @@ if executable('ag')
   " ag is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
 endif
-
-" Tmuxline
-let g:tmuxline_powerline_separators=0
 
 " Colorscheme
 colorscheme solarized
