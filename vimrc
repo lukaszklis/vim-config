@@ -37,25 +37,24 @@ set hlsearch
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'gmarik/Vundle.vim'
-Plugin 'sheerun/vim-polyglot'
-Plugin 'tpope/vim-commentary'
-Plugin 'tpope/vim-surround'
-Plugin 'bogado/file-line'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'kien/ctrlp.vim'
-Plugin 'mattn/emmet-vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-rails'
 Plugin 'Townk/vim-autoclose'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'bogado/file-line'
+Plugin 'gmarik/Vundle.vim'
 Plugin 'grep.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'mattn/emmet-vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'sheerun/vim-polyglot'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'scrooloose/nerdtree'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'kien/rainbow_parentheses.vim'
-Plugin 'scrooloose/syntastic'
 
 call vundle#end()
 
@@ -114,23 +113,6 @@ nmap ,gd :Gdiff<cr>
 nmap ,gb :Gblame<cr>
 noremap ,f :NERDTreeFind<cr>
 noremap ,d :NERDTreeToggle<cr>
-
-" CtrlP + Rails
-map ,ja :CtrlP app<CR>
-map ,jA :CtrlP app/assets<CR>
-map ,jc :CtrlP app/controllers<CR>
-map ,jC :CtrlP config<CR>
-map ,jd :CtrlP db<CR>
-map ,jh :CtrlP app/helpers<CR>
-map ,jj :CtrlP app/assets/javascripts<CR>
-map ,jl :CtrlP lib<CR>
-map ,jm :CtrlP app/models<CR>
-map ,jM :CtrlP app/mailers<CR>
-map ,jp :CtrlP public<CR>
-map ,js :CtrlP spec<CR>
-map ,jS :CtrlP app/assets/stylesheets<CR>
-map ,jv :CtrlP app/views<CR>
-map ,jV :CtrlP vendor<CR>
 
 " grep.vim
 au FileType qf nmap <buffer> <cr> <cr><c-w><c-p>
