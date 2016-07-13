@@ -63,6 +63,10 @@ filetype plugin indent on
 
 " CtrlP
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:ctrlp_custom_ignore = {
+  \ 'dir': '\v[\/]\.(git|hg|svn|sass-cache|bundle)$|\v[\/]public|node_modules|bower_components|\v[\/]public\/system|log$|tmp$|bin$|coverage$',
+  \ 'file': '\v\.(exe|so|dll|jpg|png|gif|jpeg|scssc|pdf)$'
+  \ }
 let g:ctrlp_match_window='order:ttb,max:20'
 
 if executable('ag')
