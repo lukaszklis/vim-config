@@ -39,9 +39,9 @@ call vundle#begin()
 
 Plugin 'Townk/vim-autoclose'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'lukaszklis/badwolf'
 Plugin 'bogado/file-line'
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'grep.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'kien/rainbow_parentheses.vim'
@@ -77,7 +77,7 @@ if executable('ag')
 endif
 
 " Colorscheme
-colorscheme solarized
+colorscheme badwolf
 
 " Emmet
 let g:user_emmet_expandabbr_key='<c-e>'
