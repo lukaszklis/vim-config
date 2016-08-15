@@ -39,7 +39,7 @@ call vundle#begin()
 
 Plugin 'Townk/vim-autoclose'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'lukaszklis/badwolf'
+Plugin 'sjl/badwolf'
 Plugin 'bogado/file-line'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'grep.vim'
