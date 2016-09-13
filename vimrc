@@ -39,7 +39,7 @@ call vundle#begin()
 
 Plugin 'Townk/vim-autoclose'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'sjl/badwolf'
+Plugin 'w0ng/vim-hybrid'
 Plugin 'bogado/file-line'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'grep.vim'
@@ -77,7 +77,10 @@ if executable('ag')
 endif
 
 " Colorscheme
-colorscheme badwolf
+set background=dark
+let g:hybrid_custom_term_colors=1
+let g:hybrid_reduced_contrast=1
+colorscheme hybrid
 
 " Emmet
 let g:user_emmet_expandabbr_key='<c-e>'
@@ -141,7 +144,7 @@ let g:syntastic_auto_loc_list=0
 
 " MacVim setup
 if has("gui_macvim")
-  set guifont=Monaco\ For\ Powerline:h12
+  set guifont=Fira\ Code\ Retina:h14
   set guioptions=A
   set guioptions-=r
   set guioptions-=R
