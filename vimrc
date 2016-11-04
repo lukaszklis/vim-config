@@ -55,6 +55,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'dracula/vim'
 
 call vundle#end()
 
@@ -77,10 +78,7 @@ if executable('ag')
 endif
 
 " Colorscheme
-set background=dark
-let g:hybrid_custom_term_colors=1
-let g:hybrid_reduced_contrast=1
-colorscheme hybrid
+colorscheme dracula
 
 " Emmet
 let g:user_emmet_expandabbr_key='<c-e>'
