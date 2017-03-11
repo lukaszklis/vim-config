@@ -135,7 +135,7 @@ let g:syntastic_auto_loc_list=0
 
 " MacVim setup
 if has("gui_macvim")
-  set guifont=Fira\ Code\ Retina:h13
+  set guifont=Fira\ Code\ Retina:h12
   set guioptions=A
   set guioptions-=r
   set guioptions-=R
