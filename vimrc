@@ -50,7 +50,6 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'dracula/vim'
 
 call plug#end()
@@ -89,7 +88,6 @@ set statusline+=\ %{exists('g:loaded_rvm')?rvm#statusline():''}
 set statusline+=%{fugitive#statusline()}%=
 set statusline+=%w\ <%{&fileformat}>%\=\ [%o]\ %l,%c%V\/%L\ \ %P
 set laststatus=2
-let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
 
 " Remaps
