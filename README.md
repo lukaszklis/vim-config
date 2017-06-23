@@ -1,8 +1,3 @@
-vimfiles
-==========
+# vimfiles
 
-Vim's config. WIP.
-
-## Conventions
-
-* all of the commits should follow the [gitmoji pattern](https://gitmoji.carloscuesta.me/)
+[![Gitmoji](https://img.shields.io/badge/gitmoji-%20💻%20🔨-FFDD67.svg?style=flat-square)](https://gitmoji.carloscuesta.me)
