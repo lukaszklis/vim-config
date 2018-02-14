@@ -50,7 +50,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
-Plug 'dracula/vim'
+Plug 'blueshirts/darcula'
 
 call plug#end()
 
@@ -70,7 +70,7 @@ if executable('ag')
 endif
 
 " Colorscheme
-colorscheme dracula
+colorscheme darcula
 
 " Emmet
 let g:user_emmet_expandabbr_key='<c-e>'
