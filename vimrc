@@ -50,7 +50,6 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
-Plug 'chriskempson/base16-vim'
 
 call plug#end()
 
@@ -68,9 +67,6 @@ if executable('ag')
   " ag is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
 endif
-
-" Colorscheme
-colorscheme base16-dracula
 
 " Emmet
 let g:user_emmet_expandabbr_key='<c-e>'
