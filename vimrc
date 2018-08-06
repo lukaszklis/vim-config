@@ -50,12 +50,12 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
-Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'chriskempson/base16-vim'
 
 call plug#end()
 
 " Colorscheme
-colorscheme dracula
+let base16colorspace = 256
 
 " CtrlP
 set runtimepath^=~/.vim/bundle/ctrlp.vim
